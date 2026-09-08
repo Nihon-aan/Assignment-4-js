@@ -58,17 +58,17 @@
 
         <div class="count-total p-5 bg-white w-[360px] rounded-lg">
             <p class="title text-[14px] font-medium">Total</p>
-            <h1 class="count text-[24px] font-bold">8</h1>
+            <h1 class="count text-[24px] font-bold" id="statTotal">0</h1>
         </div>
 
         <div class="count-interview p-5 bg-white w-[360px] rounded-lg">
             <p class="title text-[14px] font-medium">Interview</p>
-            <h1 class="count text-[24px] text-[#10B981] font-bold">0</h1>
+            <h1 class="count text-[24px] text-[#10B981] font-bold" id="statInterview">0</h1>
         </div>
 
         <div class="count-rejected p-5 bg-white w-[360px] rounded-lg">
             <p class="title text-[14px] font-medium">Rejected</p>
-            <h1 class="count text-[24px] text-[#EF4444] font-bold">0</h1>
+            <h1 class="count text-[24px] text-[#EF4444] font-bold" id="statRejected">0</h1>
         </div>
 
     </div>
@@ -84,7 +84,7 @@
                     <h1 class="text-[20px] font-semibold">Available jobs</h1>
                 </div>
                 <div class="title-count">
-                    <p class="text-[#64748B] font-medium"><Span>8</Span>Jobs</p>
+                    <p class="text-[#64748B] font-medium"><Span id="available-jobs">8</Span>Jobs</p>
                 </div>
 
             </section>
@@ -96,11 +96,11 @@
 
 
                 <button
-                    class="btn bg-white text-[#64748B] mr-[8px] font-medium  border-none px-[12px] py-[8px] min-w-[80px]">All</button>
+                    class="btn bg-white text-[#64748B] mr-[8px] font-medium  border-none px-[12px] py-[8px] min-w-[80px]" id="all-btn">All</button>
                 <button
-                    class="btn bg-white text-[#64748B] mr-[8px] font-medium border-none px-[12px] py-[8px] min-w-[80px]">Interview</button>
+                    class="btn bg-white text-[#64748B] mr-[8px] font-medium border-none px-[12px] py-[8px] min-w-[80px]" id="interview-btn">Interview</button>
                 <button
-                    class="btn bg-white text-[#64748B] mr-[8px] font-medium border-none px-[12px] py-[8px] min-w-[80px]">Rejected</button>
+                    class="btn bg-white text-[#64748B] mr-[8px] font-medium border-none px-[12px] py-[8px] min-w-[80px]" id="rejected-btn">Rejected</button>
 
 
 
@@ -111,7 +111,7 @@
 
 
 
-                <div class="card bg-white rounded-lg border-[1px] p-[24px] mb-[16px] border-[#F1F2F4]">
+                <div id="card-1" class="card  bg-white rounded-lg border-[1px] p-[24px] mb-[16px] border-[#F1F2F4]">
 
                     <div class="flex justify-between items-center mb-[20px]">
                         <div class="txt">
@@ -130,7 +130,8 @@
                     </p>
 
                     <button
-                        class="btn w-fit border-none bg-[#EEF4FF] text-[14px] rounded-lg text-[#002C5C] leading-[20px] mb-[8px]">NOT
+                        id="badge-1"
+                        class="btn  w-fit border-none  bg-[#EEF4FF] text-[14px] rounded-lg text-[#002C5C] leading-[20px] mb-[8px]">NOT
                         APPLIED</button>
 
                     <p class="text-[#323B49] text-[16px] leading-[20px] mb-[20px]">Build cross-platform mobile
@@ -139,13 +140,13 @@
                         users worldwide.</p>
 
                     <div>
-                        <button class="btn btn-outline text-[#10B981] mr-[8px] border-[#10B981]">INTERVIEW</button>
-                        <button class="btn btn-outline text-[#EF4444] mr-[8px] border-[#EF4444] ">REJECTED</button>
+                        <button id="interview-1" class="btn btn-outline text-[#10B981] mr-[8px] border-[#10B981]">INTERVIEW</button>
+                        <button id="rejected-1" class="btn btn-outline text-[#EF4444] mr-[8px] border-[#EF4444] ">REJECTED</button>
                     </div>
                 </div>
 
 
-                <div class="card bg-white rounded-lg border-[1px] p-[24px] mb-[16px] border-[#F1F2F4]">
+                <div id="card-2" class="card bg-white rounded-lg border-[1px] p-[24px] mb-[16px] border-[#F1F2F4]">
 
                     <div class="flex justify-between items-center mb-[20px]">
                         <div class="txt">
@@ -167,6 +168,7 @@
                     </p>
 
                     <button
+                     id="badge-2"
                         class="btn w-fit border-none bg-[#EEF4FF] text-[14px] rounded-lg text-[#002C5C] leading-[20px] mb-[8px]">NOT
                         APPLIED</button>
 
@@ -174,13 +176,13 @@
                         high-profile clients. Must have portfolio and experience with modern web design trends.</p>
 
                     <div>
-                        <button class="btn btn-outline text-[#10B981] mr-[8px] border-[#10B981]">INTERVIEW</button>
-                        <button class="btn btn-outline text-[#EF4444] mr-[8px] border-[#EF4444] ">REJECTED</button>
+                        <button id="interview-2" class="btn btn-outline text-[#10B981] mr-[8px] border-[#10B981]">INTERVIEW</button>
+                        <button id="rejected-2" class="btn btn-outline text-[#EF4444] mr-[8px] border-[#EF4444] ">REJECTED</button>
                     </div>
                 </div>
 
 
-                <div class="card bg-white rounded-lg border-[1px] p-[24px] mb-[16px] border-[#F1F2F4]">
+                <div id="card-3" class="card bg-white rounded-lg border-[1px] p-[24px] mb-[16px] border-[#F1F2F4]">
 
                     <div class="flex justify-between items-center mb-[20px]">
                         <div class="txt">
@@ -201,7 +203,8 @@
                         $125,000 - $165,000
                     </p>
 
-                    <button
+                    <button 
+                     id="badge-3"
                         class="btn w-fit border-none bg-[#EEF4FF] text-[14px] rounded-lg text-[#002C5C] leading-[20px] mb-[8px]">NOT
                         APPLIED</button>
 
@@ -211,13 +214,13 @@
                     </p>
 
                     <div>
-                        <button class="btn btn-outline text-[#10B981] mr-[8px] border-[#10B981]">INTERVIEW</button>
-                        <button class="btn btn-outline text-[#EF4444] mr-[8px] border-[#EF4444] ">REJECTED</button>
+                        <button  id="interview-3" class="btn btn-outline text-[#10B981] mr-[8px] border-[#10B981]">INTERVIEW</button>
+                        <button id="rejected-3" class="btn btn-outline text-[#EF4444] mr-[8px] border-[#EF4444] ">REJECTED</button>
                     </div>
                 </div>
 
 
-                <div class="card bg-white rounded-lg border-[1px] p-[24px] mb-[16px] border-[#F1F2F4]">
+                <div id="card-4" class="card bg-white rounded-lg border-[1px] p-[24px] mb-[16px] border-[#F1F2F4]">
 
                     <div class="flex justify-between items-center mb-[20px]">
                         <div class="txt">
@@ -239,6 +242,7 @@
                     </p>
 
                     <button
+                     id="badge-4"
                         class="btn w-fit border-none bg-[#EEF4FF] text-[14px] rounded-lg text-[#002C5C] leading-[20px] mb-[8px]">NOT
                         APPLIED</button>
 
@@ -246,13 +250,13 @@
                         systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.</p>
 
                     <div>
-                        <button class="btn btn-outline text-[#10B981] mr-[8px] border-[#10B981]">INTERVIEW</button>
-                        <button class="btn btn-outline text-[#EF4444] mr-[8px] border-[#EF4444] ">REJECTED</button>
+                        <button  id="interview-4" class="btn btn-outline text-[#10B981] mr-[8px] border-[#10B981]">INTERVIEW</button>
+                        <button id="rejected-4" class="btn btn-outline text-[#EF4444] mr-[8px] border-[#EF4444] ">REJECTED</button>
                     </div>
                 </div>
 
 
-                <div class="card bg-white rounded-lg border-[1px] p-[24px] mb-[16px] border-[#F1F2F4]">
+                <div  id="card-5" class="card bg-white rounded-lg border-[1px] p-[24px] mb-[16px] border-[#F1F2F4]">
 
                     <div class="flex justify-between items-center mb-[20px]">
                         <div class="txt">
@@ -274,6 +278,7 @@
                     </p>
 
                     <button
+                     id="badge-5"
                         class="btn w-fit border-none bg-[#EEF4FF] text-[14px] rounded-lg text-[#002C5C] leading-[20px] mb-[8px]">NOT
                         APPLIED</button>
 
@@ -282,13 +287,13 @@
                         required.</p>
 
                     <div>
-                        <button class="btn btn-outline text-[#10B981] mr-[8px] border-[#10B981]">INTERVIEW</button>
-                        <button class="btn btn-outline text-[#EF4444] mr-[8px] border-[#EF4444] ">REJECTED</button>
+                        <button  id="interview-5" class="btn btn-outline text-[#10B981] mr-[8px] border-[#10B981]">INTERVIEW</button>
+                        <button id="rejected-5" class="btn btn-outline text-[#EF4444] mr-[8px] border-[#EF4444] ">REJECTED</button>
                     </div>
                 </div>
 
 
-                <div class="card bg-white rounded-lg border-[1px] p-[24px] mb-[16px] border-[#F1F2F4]">
+                <div id="card-6" class="card bg-white rounded-lg border-[1px] p-[24px] mb-[16px] border-[#F1F2F4]">
 
                     <div class="flex justify-between items-center mb-[20px]">
                         <div class="txt">
@@ -310,6 +315,7 @@
                     </p>
 
                     <button
+                     id="badge-6"
                         class="btn w-fit border-none bg-[#EEF4FF] text-[14px] rounded-lg text-[#002C5C] leading-[20px] mb-[8px]">NOT
                         APPLIED</button>
 
@@ -318,13 +324,13 @@
                         professional development opportunities.</p>
 
                     <div>
-                        <button class="btn btn-outline text-[#10B981] mr-[8px] border-[#10B981]">INTERVIEW</button>
-                        <button class="btn btn-outline text-[#EF4444] mr-[8px] border-[#EF4444] ">REJECTED</button>
+                        <button  id="interview-6" class="btn btn-outline text-[#10B981] mr-[8px] border-[#10B981]">INTERVIEW</button>
+                        <button id="rejected-6" class="btn btn-outline text-[#EF4444] mr-[8px] border-[#EF4444] ">REJECTED</button>
                     </div>
                 </div>
 
 
-                <div class="card bg-white rounded-lg border-[1px] p-[24px] mb-[16px] border-[#F1F2F4]">
+                <div id="card-7" class="card bg-white rounded-lg border-[1px] p-[24px] mb-[16px] border-[#F1F2F4]">
 
                     <div class="flex justify-between items-center mb-[20px]">
                         <div class="txt">
@@ -346,6 +352,7 @@
                     </p>
 
                     <button
+                     id="badge-7"
                         class="btn w-fit border-none bg-[#EEF4FF] text-[14px] rounded-lg text-[#002C5C] leading-[20px] mb-[8px]">NOT
                         APPLIED</button>
 
@@ -355,13 +362,13 @@
                         included.</p>
 
                     <div>
-                        <button class="btn btn-outline text-[#10B981] mr-[8px] border-[#10B981]">INTERVIEW</button>
-                        <button class="btn btn-outline text-[#EF4444] mr-[8px] border-[#EF4444] ">REJECTED</button>
+                        <button  id="interview-7" class="btn btn-outline text-[#10B981] mr-[8px] border-[#10B981]">INTERVIEW</button>
+                        <button id="rejected-7" class="btn btn-outline text-[#EF4444] mr-[8px] border-[#EF4444] ">REJECTED</button>
                     </div>
                 </div>
 
 
-                <div class="card bg-white rounded-lg border-[1px] p-[24px] mb-[16px] border-[#F1F2F4]">
+                <div id="card-8" class="card bg-white rounded-lg border-[1px] p-[24px] mb-[16px] border-[#F1F2F4]">
 
                     <div class="flex justify-between items-center mb-[20px]">
                         <div class="txt">
@@ -383,6 +390,7 @@
                     </p>
 
                     <button
+                     id="badge-8"
                         class="btn w-fit border-none bg-[#EEF4FF] text-[14px] rounded-lg text-[#002C5C] leading-[20px] mb-[8px]">NOT
                         APPLIED</button>
 
@@ -392,8 +400,8 @@
                         a talented team on cutting-edge projects.</p>
 
                     <div>
-                        <button class="btn btn-outline text-[#10B981] mr-[8px] border-[#10B981]">INTERVIEW</button>
-                        <button class="btn btn-outline text-[#EF4444] mr-[8px] border-[#EF4444] ">REJECTED</button>
+                        <button  id="interview-8" class="btn btn-outline text-[#10B981] mr-[8px] border-[#10B981]">INTERVIEW</button>
+                        <button id="rejected-8" class="btn btn-outline text-[#EF4444] mr-[8px] border-[#EF4444] ">REJECTED</button>
                     </div>
                 </div>
 
@@ -453,7 +461,7 @@
 
 
 
-
+<script src="script.js"></script>
 </body>
 
 </html>
